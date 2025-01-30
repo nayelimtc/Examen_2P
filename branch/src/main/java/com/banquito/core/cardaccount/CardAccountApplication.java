@@ -1,4 +1,4 @@
-package com.banquito.core.branch;
+package com.banquito.core.cardaccount;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,10 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 @EnableMongoRepositories
-public class BranchApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(BranchApplication.class, args);
-    }
-} 
+public class CardAccountApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CardAccountApplication.class, args);
+	}
+
+}

@@ -1,16 +1,14 @@
 package com.banquito.core.branch.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.banquito.core.branch.model.Branch;
+import com.banquito.core.branch.model.BranchHoliday;
+import com.banquito.core.branch.service.BranchService;
+// ... resto de imports ...
 
 @RestController
-@RequestMapping("/v1/branches") // Endpoint
+@RequestMapping("/api/v1/branches")
+@RequiredArgsConstructor
+@Tag(name = "Branch API", description = "API para gestionar sucursales bancarias")
 public class BranchController {
-    private final BranchService service;
-    private final BranchMapper mapper;
-
-    public BranchController(BranchService service, BranchMapper mapper) {
-        this.service = service;
-        this.mapper = mapper;
-    }
-}
+    // ... resto del código se mantiene igual ...
+} 
